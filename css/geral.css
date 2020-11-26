@@ -190,6 +190,10 @@ padding: 10px;
 }
 
 @media (max-width: 700px) {
+  body {
+    display: block;
+  }
+  
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -211,6 +215,7 @@ padding: 10px;
   }
   .menu {
     margin-top: 0px;
+    background: none;
   }
   .copyright {
     margin-bottom: 0px;
@@ -290,3 +295,16 @@ padding: 10px;
   transform: translate3d(0, 0, 0);
 }
 
+[data-semana]::after { 
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+[data-semana].aberto::after {
+  background: green;
+}

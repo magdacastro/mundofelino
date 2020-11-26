@@ -17,7 +17,8 @@
 
 <body>
   <nav class="menu js-menu">
-    <ul>
+    <button data-menu="button-mobile" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul data-menu="list" id="menu">
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">Contato</a></li>
@@ -130,6 +131,13 @@
     </dl>
   </section>
 
+  <section class="grid-section numeros js-scroll">
+    <h1 class="titulo">Números</h1>
+    <div class="numeros-grid"></div>
+  </section>
+
+
+
   <section class="grid-section contato js-scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
@@ -142,6 +150,7 @@
       <li>magdacatianedecastro@gmail.com</li>
       <li>+55 51 98944-8064</li>
       <li>São Leopoldo - RS</li>
+      <li data-semana="1,2,3,4,5" data-horario="8, 18">Seg à Sex - 8h às 18h</li>
     </ul>
   </section>
 
@@ -152,11 +161,11 @@
   <section class="modal-container" data-modal="container">
     <div class="modal">
       <button class="fechar" data-modal="fechar">X</button>
-      <form action="">
+      <form action="" method="post">
         <label for="email">Email</label>
         <input type="text" for="email" id="email">
         <label for="senha">Senha</label>
-        <input type="password" for="senha" id="senha">
+        <input type="password" maxlength="10" for="senha" id="senha">
         <button class="btn-submit" type="submit">Entrar</button>
       </form>
     </div>
@@ -169,13 +178,19 @@
   <script type="text/javascript" src="script/modules/tab-nav.js"></script>
   <script type="text/javascript" src="script/modules/modal.js"></script>
   <script type="text/javascript" src="script/modules/tooltip.js"></script>
+  <script type="text/javascript" src="script/modules/menu-mobile.js"></script>
+  <script type="text/javascript" src="script/modules/horario.js"></script>
+  <script type="text/javascript" src="script/modules/fetch-animais.js"></script>
 
   <script>
     initModal();
     initTabNav();
     initTooltip();
+    initHorario();
     initAccordion();
+    initMenuMobile();
     initScrollSuave();
+    initFetchAnimais();
     initAnimacaoScroll();
   </script>
 </body>
