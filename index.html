@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script>
     document.documentElement.className += 'js';
   </script>
@@ -21,6 +22,7 @@
     <ul data-menu="list" id="menu">
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="#galeria">Gatos</a></li>
       <li><a href="#contato">Contato</a></li>
       <li><a href="" data-modal="abrir">Login</a></li>
       <li><a href="https://www.linkedin.com/in/magda-castro-4246b0192/">Perfil →</a></li>
@@ -136,6 +138,23 @@
     <div class="numeros-grid"></div>
   </section>
 
+  <section class="grid-section galeria js-scroll" id="galeria">
+    <h1 class="titulo">Gatos</h1>
+    <div class="imgBox">
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><img src="images/cats/cat1.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat2.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat3.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat4.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat5.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat6.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat7.jpg" alt="gato"></li>
+          <li class="swiper-slide"><img src="images/cats/cat8.jpg" alt="gato"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 
   <section class="grid-section contato js-scroll" id="contato">
@@ -171,7 +190,7 @@
     </div>
   </section>
 
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="script/modules/accordion.js"></script>
   <script type="text/javascript" src="script/modules/scroll-animacao.js"></script>
   <script type="text/javascript" src="script/modules/scroll-suave.js"></script>
@@ -181,8 +200,10 @@
   <script type="text/javascript" src="script/modules/menu-mobile.js"></script>
   <script type="text/javascript" src="script/modules/horario.js"></script>
   <script type="text/javascript" src="script/modules/fetch-animais.js"></script>
+  <script type="text/javascript" src="script/modules/slide-animais.js"></script>
 
   <script>
+    initSlide();
     initModal();
     initTabNav();
     initTooltip();
@@ -192,6 +213,7 @@
     initScrollSuave();
     initFetchAnimais();
     initAnimacaoScroll();
+
   </script>
 </body>
 

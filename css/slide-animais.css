@@ -1,0 +1,43 @@
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  height: 300px;
+  justify-content: center;
+  opacity: 0;
+  grid-column: 1 / -1;
+}
+
+.imgBox {
+  grid-column: 1 / -1;
+}
+
+.imgBox img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  min-height: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  transition: .3s;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  opacity: 0.6;
+}
+
+/*******************/

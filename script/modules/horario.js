@@ -13,4 +13,3 @@ function initHorario() {
     funcionamento.classList.add('aberto');
   }
 }
-
